@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            /* text-align: center;        this is a element selector */
+        }
+         #new{
+            /* background-color: aqua;    this is id selector */
+         }
+          * {
+            /* color: brown;           this is universal selector */
+          }
+        div + p{
+            /* color: red;          this is child selector */
+        }
+
+        div ~p:hover{
+            /* color: red;          this is general sibling */
+        }
+
+        div ~ p ::first-letter{
+            color: red;
+        }
+        a[target]{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 5 type of selectors -->
+    <div>
+        <p>Paragraph 1</p>
+        <p id="new">Paragraph 2</p>
+        <section>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </section>
+     </div>
+     <p>paragraph 3</p>
+     <p>paragraph 4</p>
+     <a href="#" target="_blank"> Google </a>
+</body>
+</html>
